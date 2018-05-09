@@ -1,0 +1,121 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+/*	color: black;*/
+	color: #FF4D00;
+	font-weight: 500;
+	font-size: 1.4em;
+}
+
+/*-------------------------------nav-----------------------------------------*/
+
+a {
+	color: #FF4D00;
+}
+
+a:hover, a:active {	
+	color: #F24900;
+}
+
+a:visited {
+	color: #FF4D00;
+}
+
+/*nav tab bg color white*/
+ul.nav a:hover { background-color: #fff !important; }
+ul.nav a:focus { background-color: #fff !important; }
+ul.nav a:active { background-color: #fff !important; }
+
+.navbar-brand {
+	font-size: 2.5em;
+}
+
+
+.navbar-nav {
+	font-size: 2em;
+/*	padding-top: 0.5%;*/
+}
+
+.navbar {
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.btn {
+	border: none;
+	color: black;
+	font-weight: 600;
+}
+
+.btn-default:hover {
+	color: #FF4D00;	
+	background-color: transparent;
+}
+
+p {
+	font-size: 2em;
+	margin: 7%;
+	margin-top: 2%;
+	color: black;
+	display: inline-block;
+}
+
+#intro {
+	width: 50%;
+	float: left;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+#intro-all {
+	
+}
+
+#portrait {
+	display: inline-block;
+	float: right;
+	width: 20%;
+	height: auto;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+
+/*-------------------------------img-----------------------------------------*/
+#gallery-container {
+	margin-top: 10%;
+	position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+	width: 200px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

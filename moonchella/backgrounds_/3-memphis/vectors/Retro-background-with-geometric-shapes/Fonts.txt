@@ -1,0 +1,10 @@
+Fonts used in this design;
+
+Font: Pacifico, 
+Author: Vernon Adams, 
+Url: http://www.fontsquirrel.com/fonts/pacifico; 
+
+Font: Quicksand, 
+Author: Andrew Paglinawan, 
+Url: http://www.fontsquirrel.com/fonts/quicksand; 
+
