@@ -1,5 +1,10 @@
 body {
-    background-color:#ECEADE;
+/*
+    background: #ECEADE;
+    background-image: linear-gradient(#ECEADE 0%, #6EAADC 80%);
+*/
+    background: rgb(114,191,255);
+background: linear-gradient(0deg, rgba(114,191,255,1) 0%, rgba(236,234,221,1) 33%);
 }
 
 p {
@@ -9,28 +14,28 @@ p {
     width: 50%;
 }
 
+#title {
+    
+}
+
+#heart {
+    margin-top: 30%;
+}
+
 #tweet {
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
+
+
+/*===========================container1=======================================*/
 .container1 {
     position: relative;
     max-width: 90%;
     margin: auto;
     left: 5%;
 }
-
-/*
-#gz {
-    position: absolute;
-    z-index: -1;
-    top:150%;
-    left:60%;
-    width:30%;
-    height:auto;
-}
-*/
 
 #gz {
     position: absolute;
@@ -55,22 +60,130 @@ p {
     top: 10%;
 }
 
+#power2people {
+    position: absolute;
+    top:0%;
+    left:205%;
+    width:30%;
+    height:auto;
+}
+
 #maccas {
     position: absolute;
-    left: 90%;
-    top: 120%;
+    top:0%;
+    left:-5%;
+    width:25%;
+    height:auto;
+}
+
+
+#memo1 {
+    position: absolute;
+    top:130%;
+    left:85%;
+    width:80%;
+    height:auto;
+}
+
+#tweet2 {
+    position: absolute;
+    top:250%;
+    left:170%;
+    width:40%;
+    height:auto;
 }
 
 #arrow1 {
     position: absolute;
-    left: 0%;
-    top: 0%;
+    top:170%;
+    left:75%;
+    width:15%;
+    height:auto;
 }
 
-#memo {
+/*===========================container2=======================================*/
+.container2 {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    left: 0%;
+}
+
+.handCursor {
+ cursor: url("images/hand.png"), pointer;
+}
+
+#quote {
     position: absolute;
-    left: 100%;
-    top: 0%;
+    top:30%;
+    left:90%;
+    width:40%;
+    height:auto;
+}
+
+#graph2 {
+    position: absolute;
+    top:10%;
+    left:150%;
+    width:80%;
+    height:auto;
+}
+
+/*===========================container3=======================================*/ 
+.container3 {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    left: 0%;
+}
+
+#memo2 {
+    position: absolute;
+    top:10%;
+    left:-3%;
+    width:25%;
+    height:auto;
+}
+
+#graph1 {
+    position: absolute;
+    top:-50%;
+    left:90%;
+    width:40%;
+    height:auto;
+}
+
+/*===========================container4=======================================*/
+.container4 {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 60%;
+    left: 0%;
+}
+
+#modelMinority {
+    position: absolute;
+    top:0%;
+    left:100%;
+    width:60%;
+    height:auto;
+}
+
+#graph3 {
+    position: absolute;
+    top:-50%;
+    left:180%;
+    width:40%;
+    height:auto;
+}
+
+#sky {
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 250%;
+    margin-left: 0%;
 }
 
 
