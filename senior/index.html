@@ -146,7 +146,7 @@
     <script>
      var elem = document.getElementById("cloudsAnimate");   
         var pos = 0;
-        var id = setInterval(frame, 10);
+        var id = setInterval(frame, 40);
         function frame() {
             if (pos == window.innerWidth) {
               pos=-10000;
@@ -158,7 +158,7 @@
         
         var elem2 = document.getElementById("cloudsAnimate2");   
         var pos2 = -100;
-        var id2 = setInterval(frame2, 5);
+        var id2 = setInterval(frame2, 20);
         function frame2() {
             if (pos2 == window.innerWidth) {
               pos2=-5000;
@@ -197,7 +197,7 @@
         
         function draw() {
         if (mouseIsPressed) {
-            strokeWeight(10);
+            strokeWeight(5);
             stroke("#000000");
             line(mouseX, mouseY, pmouseX, pmouseY);
         }  
