@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <!--title-->
     <title>Letter</title>
 
@@ -16,6 +15,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
 
+    <!--p5-->
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/addons/p5.dom.min.js"></script>
+    <script src="p5/addons/p5.dom.js"></script>
+
     <style>
     </style>
 
@@ -25,7 +29,7 @@
         function changeLight() {
             var element = document.getElementById("light-text");
             element.classList.toggle("test");
-            
+            3
             var switchLight = document.getElementById("off-switch");
             console.log(switchLight.src);
             console.log(switchLight.src.split("/"));
@@ -35,25 +39,25 @@
             } else {
                 switchLight.src = "images/off.png"
             }
-            
         }
-        
         </script>
     </head>
 
     <body>
         <div align="center">
             <!--page title-->	
-            <img id="title" src="images/title.png" width="100%" height="auto"/>
+ 
+                <img id="title" src="images/title.png" width="100%" height="auto"/>
+            
             <img id="heart" src="images/heart.png" width="50%" height="auto"/>
             
-
             <!--content-->	
             <img id="tweet" src="images/tweet.png" width="30%" height="auto" style="align-content: center"/> 
             
             <!---------------------------------------container1----------------------------------------->	
                 <div class="container1">
                     
+                    <img id="after" src="images/after.png"/>
                     <img id="power2people" src="images/power2people.png"/>
                     
                     <p>
@@ -126,13 +130,82 @@
                         <p>
                         Mikki Kendall started the hashtag #notYourMule to point out exactly that, as the work the black folks, especially black women, put into fighting for civil rights has brought visibility to so many issues affecting non-black POCs, but it is rarely reciprocated. That is, black folks are often alone in their civil fights until it impacts other communities. Solidarity was never supposed to be a one-way street.  
                         </p>
-                        <img id="sky" src="images/bottom.png"/>
+                        
+<!--                       <img id="sky" src="images/bottom.png"/>-->
+                
+                            <img id="sky" src="images/skyWords.png"/>
+                            <img id ="cloudsAnimate" src="images/clouds.png"/>
+                            <img id ="cloudsAnimate2" src="images/clouds2.png"/>
+    
                     </div>
                 </div>
-
         </div>
         
+    </body>
+    
+    <script>
+     var elem = document.getElementById("cloudsAnimate");   
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (pos == window.innerWidth) {
+              pos=-10000;
+            } else {
+              pos++; 
+              elem.style.left = pos + "px"; 
+            }
+          }
+        
+        var elem2 = document.getElementById("cloudsAnimate2");   
+        var pos2 = -100;
+        var id2 = setInterval(frame2, 5);
+        function frame2() {
+            if (pos2 == window.innerWidth) {
+              pos2=-5000;
+            } else {
+              pos2++; 
+              elem2.style.left = pos2 + "px"; 
+            }
+          }
+    </script>
+    
+    
+    <script>
+        //variables
+        var canvas;
+        var r = 0;
+        var g = 0;
+        var b = 0;
+
+        //resize canvas if window is resized
+        function windowResized() {
+            resizeCanvas(windowWidth, windowHeight);
+            console.log(windowWidth, windowHeight, "windowIsResized");
+        }
+
+        //setup
+        function setup() {
+            canvas = createCanvas(windowWidth, windowHeight);
+            canvas.position(0, 0);
+            canvas.style('z-index','5');
+            console.log(windowWidth, windowHeight);
+
+        }
         
 
-    </body>
+//        var value = '#000000';
+        
+        function draw() {
+        if (mouseIsPressed) {
+            strokeWeight(10);
+            stroke("#000000");
+            line(mouseX, mouseY, pmouseX, pmouseY);
+        }  
+
+           
+        }
+        
+        
+        //clear();
+        </script>
 </html>

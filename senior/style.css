@@ -4,7 +4,9 @@ body {
     background-image: linear-gradient(#ECEADE 0%, #6EAADC 80%);
 */
     background: rgb(114,191,255);
-background: linear-gradient(0deg, rgba(114,191,255,1) 0%, rgba(236,234,221,1) 33%);
+    background: linear-gradient(0deg, rgba(114,191,255,1) 0%, rgba(236,234,221,1) 33%);
+    padding-bottom: 50%;
+    cursor: url("images/pencil.png"), pointer;
 }
 
 p {
@@ -14,9 +16,7 @@ p {
     width: 50%;
 }
 
-#title {
-    
-}
+
 
 #heart {
     margin-top: 30%;
@@ -25,9 +25,12 @@ p {
 #tweet {
     margin-top: 3%;
     margin-bottom: 3%;
+    cursor: url("images/pencil.png"), pointer;
 }
 
+#title {
 
+}
 
 /*===========================container1=======================================*/
 .container1 {
@@ -44,6 +47,7 @@ p {
     left:60%;
     width:30%;
     height:auto;
+    
 }
 
 #light-text {
@@ -56,14 +60,20 @@ p {
 
 #heart {
     position: absolute;
+    left: 130%;
+    top: -50%;
+}
+
+#after {
+    position: absolute;
     left: 110%;
-    top: 10%;
+    top: -10%;
 }
 
 #power2people {
     position: absolute;
     top:0%;
-    left:205%;
+    left:180%;
     width:30%;
     height:auto;
 }
@@ -74,6 +84,7 @@ p {
     left:-5%;
     width:25%;
     height:auto;
+    
 }
 
 
@@ -157,8 +168,7 @@ p {
 .container4 {
     position: relative;
     max-width: 90%;
-    margin: auto;
-    margin-bottom: 60%;
+/*    margin-bottom: 40%;*/
     left: 0%;
 }
 
@@ -180,17 +190,28 @@ p {
 
 #sky {
     position: absolute;
-    top:100%;
-    left: 0;
-    width: 250%;
+    top:120%;
+    left: 25%;
+    width: 200%;
     margin-left: 0%;
 }
 
+#cloudsAnimate {
+    position: absolute;
+    z-index: -1;
+    top:100%;
+    left: 0%;
+    width: 200%;
+    height: auto;
+}
 
-
-
-
-
+#cloudsAnimate2 {
+    position: absolute;
+    top:120%;
+    left: 0%;
+    width: 50%;
+    height: auto;
+}
 
 
 
