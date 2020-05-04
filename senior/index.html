@@ -146,10 +146,10 @@
     <script>
      var elem = document.getElementById("cloudsAnimate");   
         var pos = 0;
-        var id = setInterval(frame, 40);
+        var id = setInterval(frame, 10);
         function frame() {
             if (pos == window.innerWidth) {
-              pos=-10000;
+              pos=-2000;
             } else {
               pos++; 
               elem.style.left = pos + "px"; 
@@ -157,11 +157,11 @@
           }
         
         var elem2 = document.getElementById("cloudsAnimate2");   
-        var pos2 = -100;
+        var pos2 = 0;
         var id2 = setInterval(frame2, 20);
         function frame2() {
             if (pos2 == window.innerWidth) {
-              pos2=-5000;
+              pos2=-1000;
             } else {
               pos2++; 
               elem2.style.left = pos2 + "px"; 
@@ -200,9 +200,7 @@
             strokeWeight(5);
             stroke("#000000");
             line(mouseX, mouseY, pmouseX, pmouseY);
-        }  
-
-           
+            }  
         }
         
         
