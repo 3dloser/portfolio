@@ -228,11 +228,11 @@ function draw() {
             if (marmiteY+10 >= tableY && tableX <= marmiteX + 10 && marmiteX <= tableX+30) {
                 
                 //if marmite crashes
-                if (velY >= 0.1 || velX >= 0.1) {
+                if (velY >= 10 || velX >= 10) {
                     marmiteCrash();  
                 }
                 //if marmite lands smoothly
-                else if (velY < 0.1 && velX <= 0.1){
+                else if (velY < 10 && velX <= 10){
                     add = 1000 * (1-velY);
                     totalScore = score + add;
                     landSuccess();
@@ -260,7 +260,7 @@ function draw() {
             //when marmite lands
             if (marmiteY >= 565) {
                 //if crash landing
-                if (velY > 0.1 || velX > 0.1) {
+                if (velY > 30 || velX > 30) {
                     marmiteCrash();
                 }
                 //if smooth landing
